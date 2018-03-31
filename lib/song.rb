@@ -45,7 +45,7 @@ class Song
     x = file.split(" - ")
     artist_name = x[0]
     title_name = x[1].gsub(".mp3", "")
-    
+
     song = self.new
     song.name = song_name
     song.artist_name = artist_name
@@ -56,13 +56,13 @@ class Song
     x = file.split(" - ")
     artist_name = x[0]
     title_name = x[1].gsub(".mp3", "")
-    
+
     song = self.create
     song.name = song_name
     song.artist_name = artist_name
     song
   end
-  
+
   def self.destroy_all
     self.all.clear
   end
